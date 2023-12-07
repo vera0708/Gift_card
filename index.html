@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyGift</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js" defer></script>
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -25,7 +29,7 @@
                 <p class="gift__description">Выберите открытку и получатель получит ее на свой телефон</p>
                 <div class="gift__wrapper">
                     <div class="gift__card">
-                        <div class="swiper gift__swiper gift__swiper_card">
+                        <div class="swiper gift__swiper gift__swiper--card">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide gift__card-slide">
                                     <img class="gift__card-image" src="img/card_01.jpg" alt="Открытка №1">
@@ -41,8 +45,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="swiper gift__swiper gift__swiper_thumb">
+                        <div class="swiper gift__swiper gift__swiper--thumb">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide gift__card-thumb">
                                     <img class="gift__card-image" src="img/card_01.jpg" alt="Открытка №1">
@@ -76,7 +79,7 @@
                             <span class="form__label-text">телефон получателя</span>
                             <input type="text" class="form__field" name="receiver_phone">
                         </label>
-                        <label class="form__label">
+                        <label class="form__label form__label-textarea">
                             <span class="form__label-text">поздравительный текст</span>
                             <textarea name="message" class="form__field form__field_textarea"
                                 placeholder="Напишите теплые слова"></textarea>
