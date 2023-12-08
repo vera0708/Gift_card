@@ -1,9 +1,15 @@
-console.log('Подключен  script.js');
-
 const swiperThumb = new Swiper('.gift__swiper--thumb', {
     spaceBetween: 16,
-    slidesPerView: 5,
+    slidesPerView: 'auto',
     freeMode: true,
+    breakpoints: {
+        320: {
+            spaceBetween: 12,
+        },
+        // 1081: {
+        //     slidesPerView: 4,
+        // }
+    }
     // watchSlidesProgress: true,
 });
 
