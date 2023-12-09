@@ -55,7 +55,6 @@ const init = async () => {
             console.log('Не получается прочитать данные')
         }
     };
-
 };
 
 init();
